@@ -11,7 +11,7 @@ for port in availablePorts:
      portNumber += 1
 
 
-ser = serial.Serial(availablePorts[2].device, 4800, timeout=1)
+ser = serial.Serial(availablePorts[0].device, 4800, timeout=1)
 
 while True:
      x = ser.read(1200)
